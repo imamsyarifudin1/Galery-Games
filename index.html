@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gallery Games</h1>
+  <input type="text" id="searchBar" placeholder="Cari game..." oninput="searchGames()" />
+  <div id="gallery" class="gallery"></div>
+  <div id="pagination" class="pagination"></div>
+
+  <div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="popupVideoContainer"></div>
+    <p id="popupDesc"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
